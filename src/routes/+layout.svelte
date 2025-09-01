@@ -17,7 +17,6 @@
   </svelte:head>
   
   <div class="layout">
-	<Navbar />
 	<main>
 	  <slot />
 	</main>

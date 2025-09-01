@@ -3,6 +3,8 @@
 .idea/
 **/*~
 full_res_imgs/
+build/
+repomix-output.txt
 
 # Mac OSX temporary files
 .DS_Store

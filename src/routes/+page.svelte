@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+	import Navbar from '$lib/components/Navbar.svelte';
+
 
 	onMount(() => {
 		const observer = new IntersectionObserver(
@@ -22,6 +24,7 @@
 	});
 </script>
 
+<Navbar />
 <div class="container">
 	<!-- Hero Section -->
 	<section class="hero">
