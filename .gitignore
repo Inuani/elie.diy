@@ -5,6 +5,7 @@
 full_res_imgs/
 build/
 repomix-output.txt
+static/argy/
 
 # Mac OSX temporary files
 .DS_Store
