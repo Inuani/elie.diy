@@ -9,7 +9,13 @@
 		'/argy/argy_castle_1.webp',
 		'/argy/argy_castle_2.webp', 
 		'/argy/argy_castle_3.webp',
-		'/argy/argy_castle_4.webp'
+        '/argy/argy_castle_4.webp',
+        '/argy/argy_castle_5.webp',
+        '/argy/argy_castle_6.webp',
+        '/argy/argy_castle_7.webp',
+        '/argy/argy_castle_8.webp',
+        '/argy/argy_castle_9.webp',
+		'/argy/argy_castle_10.webp'
 	];
 
 	const maxSlides = castleImages.length - 2; // Show 3 images at once
@@ -31,6 +37,8 @@
 	}
 </script>
 
+
+
 <svelte:head>
 	<title>Séjour méditation au Château d'Argy</title>
 	<meta name="description" content="du vendredi 10 au lundi 13 octobre 2025" />
@@ -40,10 +48,9 @@
 	<!-- Hero Section -->
 	<section class="hero" in:fade={{ duration: 800 }}>
 		<div class="hero-content">
-			<h1>Séjour méditation au Château d'Argy </h1>
-			<p class="hero-subtitle">du vendredi 10 au lundi 13 octobre 2025</p>
+			<h1>Qui d'autre nous rejoins pour une parenthèse méditation au Château d'Argy?</h1>
+			<p class="hero-subtitle">Une rencontre amicale du vendredi 10 au lundi 13 octobre 2025</p>
 			<div class="hero-dates">
-				<!-- <span class="main-dates">du vendredi 10 au lundi 13 octobre 2025</span> -->
 				<span class="weekend-option">(Possibilité de venir uniquement pour le weekend)</span>
 			</div>
 		</div>
@@ -51,6 +58,10 @@
 
 	<!-- Castle Images Carousel -->
 	<section class="castle-gallery section">
+
+        <div class="gallery-header">
+        <h3>Photos du château, alentours, cuisine, salon, chambres etc.</h3>
+    </div>
 		<div class="carousel-container">
 			<button class="carousel-nav carousel-prev" onclick={() => goToSlide(Math.max(0, currentSlide - 1))} aria-label="Previous images">
 				<svg viewBox="0 0 24 24" fill="currentColor">
@@ -73,6 +84,7 @@
 					{/each}
 				</div>
 			</div>
+
 			
 			<button class="carousel-nav carousel-next" onclick={() => goToSlide(Math.min(maxSlides, currentSlide + 1))} aria-label="Next images">
 				<svg viewBox="0 0 24 24" fill="currentColor">
@@ -95,75 +107,67 @@
 
 	<!-- Program Section -->
 	<section class="section program-section" in:fade={{ duration: 800 }}>
-		<div class="section-content">
-			<h2>Programme</h2>
-			
-			<div class="meditation-highlight">
-				<h3>Au moins 2 méditations par jour</h3>
-				<p>Le matin et en fin d'après-midi.</p>
-				<p>Lors des séjours les méditations sont le socle, le pilier qui permettent aux ateliers de prendre grâce.</p>
-			</div>
-
-			<div class="meditation-method">
-				<h3>La méditation à induction (MI) comme instrument d'exploration</h3>
-				<p>Une méditation simple, douce, naturelle et transparente. Sans mantras, symboles, rituels, imagerie, respirations et sans technique.</p>
-				<p>La méditation à induction permet d'aller progressivement au-delà des états temporaires de relaxation intérieure et du bien-être psychophysique pour accéder aux aspects plus profonds et subtils de la conscience.</p>
-				<p>Elle favorise les mécanismes de l'évolution et de la guérison à tous les niveaux. Durant la méditation, l'induction à des états de conscience différents se fait par les médiateurs expérimentés qui agissent comme des émetteurs sur les méditants-récepteurs en canalisant des fréquences subtiles et élevées.</p>
-			</div>
-
-			<div class="creative-workshops">
-				<h3>Ateliers créatifs et artistiques</h3>
-				<p>Autres ateliers selon les élans et les participants... selon la volonté de chacun.e</p>
-			</div>
-		</div>
-	</section>
+    <div class="section-content">
+        <h2>Programme de la rencontre</h2>
+        
+        <div class="meditation-highlight">
+            <h3>Je vous propose comme base pour cette rencontre deux méditations/jour (au minimum) 🧘🏼‍♀️🪷🧘‍♂️</h3>
+        </div>
+        <div class="program-flow">
+             <p>Avec cette base, cette rencontre pourra se tisser organiquement selon vos inspirations et vos élans ...</p>
+            <p> 🎨 Activités créatives/artistique • 💃 Mouvements & Corps • 🗣️ Partages & Cercles • 🌿 Connexion nature ...</p>
+            <p>Que vous ayez des élans co-création ou pas vous êtes chaleureusement invité pour cette rencontre!</p>
+        </div>
+    </div>
+</section>
 
 	<!-- Pricing Section -->
 	<section class="section pricing-section section-alt" in:fade={{ duration: 800 }}>
 		<div class="section-content">
-			<h2>Tarifs</h2>
+			<h2>Estimation du coût de la rencontre</h2>
+            <h3>Pour contribuer à l'esprit d'une rencontre amicale, les coûts se veulent doux.</h3>
 			
 			<div class="pricing-cards">
 				<div class="pricing-card">
-					<h3>Séjour complet (4 jours)</h3>
+					<h3>Séjour complet (4 jours et 3 nuits)</h3>
 					<div class="price-breakdown">
 						<div class="price-item">
-							<span>Location du gîte, salle méditation, chambre</span>
-							<span>130€</span>
-						</div>
-						<div class="price-item">
-							<span>Organisation du séjour et ateliers</span>
-							<span>80€</span>
-						</div>
-						<div class="price-item">
-							<span>Repas (30€/jour)</span>
+							<span>Location salle méditation, cuisine, salon, salle à manger & chambre pour 3 nuits</span>
 							<span>120€</span>
+						</div>
+						<div class="price-item">
+							<span>Organisation du séjour</span>
+							<span>60€</span>
+						</div>
+						<div class="price-item">
+							<span>Repas (33€/jour)</span>
+							<span>100€</span>
 						</div>
 						<div class="price-item donation">
 							<span>Donation pour le service spirituel (suggestion)</span>
-							<span>120€</span>
+							<span>100€</span>
 						</div>
 						<div class="price-total">
 							<span>Total</span>
-							<span>450€</span>
+							<span>~380€</span>
 						</div>
 					</div>
 				</div>
 
 				<div class="pricing-card">
-					<h3>Weekend seulement (2 jours)</h3>
+					<h3>Weekend seulement (2 jours et 2 nuits)</h3>
 					<div class="price-breakdown">
 						<div class="price-item">
-							<span>Location du gîte, salle méditation, chambre</span>
-							<span>130€</span>
+							<span>Location salle méditation, cuisine, salon, salle à manger & chambre pour 2 nuits</span>
+							<span>100€</span>
 						</div>
 						<div class="price-item">
-							<span>Organisation du séjour et ateliers</span>
-							<span>80€</span>
+							<span>Organisation du séjour</span>
+							<span>60€</span>
 						</div>
 						<div class="price-item">
-							<span>Repas</span>
-							<span>80€</span>
+							<span>Repas (33€/jour)</span>
+							<span>66€</span>
 						</div>
 						<div class="price-item donation">
 							<span>Donation pour le service spirituel (suggestion)</span>
@@ -171,32 +175,31 @@
 						</div>
 						<div class="price-total">
 							<span>Total</span>
-							<span>370€</span>
+							<span>~310€</span>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-
-	<!-- Organizer Section -->
-	<section class="section organizer-section" in:fade={{ duration: 800 }}>
-		<div class="section-content">
-			<h2>Organisateur et guide de méditation</h2>
-			<p class="organizer-name">Elie Gauthey</p>
+            <div class="pricing-disclaimer">
+				<p>
+					<em>Ces estimations sont données à titre indicatif et peuvent varier suivant vos moyens, vos élans de soutien, du pays dans lequel vous travailler, etc.</em>
+				</p>
+			</div>
 		</div>
 	</section>
 
 	<!-- Contact/Booking -->
 	<section class="section contact-section" in:fade={{ duration: 800 }}>
 		<div class="section-content">
-			<h2>Réservation et contact</h2>
+			<h2>Nous sommes pour l'instant 5 participant.e.s,</h2>
+            <h3>pour vous inscrire ou en savoir plus</h3>
 			<div class="contact-info">
-				<a href="https://t.me/elie_lx" target="_blank" class="contact-btn">
-					Réserver sur Telegram
-				</a>
-				<a href="https://instagram.com/elie.diy" target="_blank" class="contact-btn">
-					Contact Instagram
+				<h3>
+					📞 Contacter Élie au +41 76 385 07 26
+                </h3>
+
+				<a href="https://chat.whatsapp.com/LQFz6HRhCV94ZH5PtmNpDT" target="_blank" class="contact-btn">
+					Cliquez ici pour rejoindre le groupe whatsapp de la rencontre
 				</a>
 			</div>
 		</div>
@@ -204,58 +207,131 @@
 </div>
 
 <style>
-	.container {
+
+    .section p,
+.price-item,
+.pricing-disclaimer p,
+.program-flow p,
+.hero-subtitle,
+.weekend-option {
+   font-family: 'Inter',  sans-serif;
+    font-weight: 300;
+}
+
+.container {
 		width: 100%;
 		overflow-x: hidden;
 	}
 
-	.hero {
-		min-height: 60vh;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-tertiary) 100%);
-		color: white;
-		text-align: center;
-		padding: 8rem 1rem 4rem;
-	}
+	/* .hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(0deg, #fff 10%, rgba(255, 255, 255, 0) 100%),
+        url('/argy/me_gibli_backgrd_right.png');
+    background-position: 60% center;
+    background-attachment: fixed;
+     background-size: contain; 
+    color: var(--color-primary);
+    text-align: center;
+    padding: 4rem 1rem 4rem;
+} */
+
+.hero {
+   min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--color-primary);
+    text-align: center;
+    padding: 4rem 1rem 4rem;
+    overflow: visible; 
+    z-index: 1;
+} 
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -10vh;
+    left: 0;
+    right: 0;
+    bottom: -15vh;
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.6)),
+        url('/argy/me_gibli_backgrd_right.png');
+    background-position: 68% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2; 
+}
+
 
 	.hero-content h1 {
 		font-family: 'Syne Mono', monospace;
-		font-size: clamp(2.5rem, 6vw, 4rem);
+		font-size: clamp(2rem, 6vw, 3rem);
 		margin-bottom: 1rem;
 		color: var(--color-primary);
+        text-shadow: 
+       2px 2px 0 #ffffff,
+       -2px 2px 0 #ffffff,
+       2px -2px 0 #ffffff,
+       -2px -2px 0 #ffffff,
+       0 0 8px #ffffff;
 	}
+
 
 	.hero-subtitle {
 		font-size: clamp(1.2rem, 3vw, 1.8rem);
 		margin-bottom: 2rem;
 		opacity: 0.9;
+        text-shadow: 
+       2px 2px 0 #ffffff,
+       -2px 2px 0 #ffffff,
+       2px -2px 0 #ffffff,
+       -2px -2px 0 #ffffff,
+       0 0 8px #ffffff;
 	}
 
 	.hero-dates {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
+         font-family: 'JetBrains Mono', monospace;
+         text-shadow: 
+       2px 2px 0 #ffffff,
+       -2px 2px 0 #ffffff,
+       2px -2px 0 #ffffff,
+       -2px -2px 0 #ffffff,
+       0 0 8px #ffffff;
 	}
 
-	/* .main-dates {
-		font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-		font-weight: bold;
-		color: var(--color-accent);
-	} */
-
 	.weekend-option {
-		font-size: clamp(0.9rem, 2vw, 1.1rem);
+		font-size: clamp(1.1rem, 2vw, 1.4rem);
 		font-style: italic;
-		opacity: 0.8;
+         font-family: 'JetBrains Mono', monospace;
 	}
 
 	/* Carousel Styles */
+
+    .gallery-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.gallery-header h3 {
+    font-family: 'Syne Mono', monospace;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--color-primary);
+    margin: 0;
+}
+
 	.castle-gallery {
-		padding: 4rem 0;
-		background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-	}
+    padding: 4rem 0;
+}
 
 	.carousel-container {
 		position: relative;
@@ -264,8 +340,6 @@
 		height: 450px;
 		border-radius: 20px;
 		overflow: hidden;
-		/* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); */
-		background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 
 	}
 
@@ -317,13 +391,13 @@
 
 	.carousel-track {
 		display: flex;
-		width: 133.33%; /* 4 images × 33.33% = 133.33% */
+
 		height: 100%;
 		transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
 	.carousel-slide {
-		width: 33.33%;
+
 		height: 100%;
 		position: relative;
 		flex-shrink: 0;
@@ -399,6 +473,14 @@
 		transform: scale(1.1);
 	}
 
+    /* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-slide {
+        padding: 0;
+    }
+
+}
+
 	/* Section Styles */
 	.section {
 		padding: 6rem 1rem;
@@ -444,10 +526,14 @@
 		border-left: 4px solid var(--color-accent);
 	}
 
-	.meditation-method,
-	.creative-workshops {
-		margin-bottom: 2rem;
-	}
+    .program-flow {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    border-left: 4px solid var(--color-secondary);
+}
+
 
 	/* Pricing Section */
 	.pricing-cards {
@@ -483,6 +569,7 @@
 		align-items: flex-start;
 		padding: 0.5rem 0;
 		border-bottom: 1px solid rgba(3, 65, 89, 0.2);
+        color: var(--color-primary);
 	}
 
 	.price-item.donation {
@@ -499,19 +586,15 @@
 		padding: 1rem 0 0;
 		border-top: 2px solid var(--color-accent);
 		margin-top: 1rem;
+        font-family: 'Inter',  sans-serif;
 	}
 
-	/* Organizer Section */
-	.organizer-section {
-		text-align: center;
+    .pricing-disclaimer p {
+		margin: 1rem;
+		color: var(--color-secondary);
+		font-size: 0.95rem;
 	}
 
-	.organizer-name {
-		font-family: 'Syne Mono', monospace;
-		font-size: clamp(1.5rem, 3vw, 2rem);
-		color: var(--color-accent);
-		font-weight: bold;
-	}
 
 	/* Contact Section */
 	.contact-section {
@@ -522,6 +605,15 @@
 	.contact-section h2 {
 		color: var(--color-accent);
 	}
+
+    .contact-section h3 {
+		color: var(--color-accent);
+        display: flex;
+		justify-content: center;
+        font-size: 1.5rem;
+         font-family: 'Inter',  sans-serif;
+	}
+
 
 	.contact-info {
 		display: flex;
