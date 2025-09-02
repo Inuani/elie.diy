@@ -240,22 +240,6 @@
 		overflow-x: hidden;
 	}
 
-	/* .hero {
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background:
-        linear-gradient(0deg, #fff 10%, rgba(255, 255, 255, 0) 100%),
-        url('/argy/me_gibli_backgrd_right.png');
-    background-position: 60% center;
-    background-attachment: fixed;
-     background-size: contain; 
-    color: var(--color-primary);
-    text-align: center;
-    padding: 4rem 1rem 4rem;
-} */
-
 .hero {
    min-height: 60vh;
     display: flex;
@@ -273,14 +257,14 @@
 .hero::before {
     content: '';
     position: absolute;
-    top: -10vh;
+    top: 0;
     left: 0;
     right: 0;
-    bottom: -15vh;
+    bottom: 0;
     background: 
         linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.6)),
         url('/argy/me_gibli_backgrd_right.png');
-    background-position: 68% center;
+    background-position: 75% center;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -2; 
@@ -406,23 +390,13 @@
 		overflow: hidden;
 	}
 
-	
-
-	/* .carousel-slide {
-
-		height: 100%;
-		position: relative;
-		flex-shrink: 0;
-		padding: 0 8px;
-	} */
-
     .carousel-slide {
-    width: calc(100% / 3); /* Exactly 1/3 of the container width */
+    width: calc(100% / 3); 
     height: 100%;
     position: relative;
     flex-shrink: 0;
     padding: 0 8px;
-    box-sizing: border-box; /* Important: include padding in width calculation */
+    box-sizing: border-box;
 }
 
 .carousel-track {
@@ -500,14 +474,6 @@
 		background: rgba(255, 255, 255, 0.8);
 		transform: scale(1.1);
 	}
-
-    /* Mobile responsive adjustments */
-@media (max-width: 768px) {
-    .carousel-slide {
-        padding: 0;
-    }
-
-}
 
 	/* Section Styles */
 	.section {
@@ -689,8 +655,9 @@
     height: 100%;
     position: relative;
     flex-shrink: 0;
-    padding: 0 8px;
+    padding: 0;
     box-sizing: border-box;
 }
+
 	}
 </style>
