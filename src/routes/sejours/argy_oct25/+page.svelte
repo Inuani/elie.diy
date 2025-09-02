@@ -4,31 +4,48 @@
 
 	let currentSlide = $state(0);
 	let isCarouselPlaying = $state(true);
+    let isMobile = $state(false);
 
 	const castleImages = [
-		'/argy/argy_castle_1.webp',
-		'/argy/argy_castle_2.webp', 
+        '/argy/argy_castle_1.webp',
+        '/argy/argy_group_1.webp',
+        '/argy/argy_group_3.webp',
 		'/argy/argy_castle_3.webp',
+        '/argy/argy_group_2.webp',
         '/argy/argy_castle_4.webp',
         '/argy/argy_castle_5.webp',
         '/argy/argy_castle_6.webp',
-        '/argy/argy_castle_7.webp',
         '/argy/argy_castle_8.webp',
         '/argy/argy_castle_9.webp',
-		'/argy/argy_castle_10.webp'
+        '/argy/argy_castle_2.webp',
+		'/argy/argy_castle_10.webp',
+        '/argy/argy_castle_7.webp',
 	];
 
-	const maxSlides = castleImages.length - 2; // Show 3 images at once
+    let maxSlides = $derived(isMobile ? castleImages.length - 1 : castleImages.length - 3);
 
-	onMount(() => {
-		const interval = setInterval(() => {
-			if (isCarouselPlaying) {
-				currentSlide = (currentSlide + 1) % (maxSlides + 1);
-			}
-		}, 4000);
+	
 
-		return () => clearInterval(interval);
-	});
+    onMount(() => {
+  // Check if mobile on mount and on resize
+  const checkMobile = () => {
+    isMobile = window.innerWidth <= 768;
+  };
+  
+  checkMobile();
+  window.addEventListener('resize', checkMobile);
+  
+  const interval = setInterval(() => {
+    if (isCarouselPlaying) {
+      currentSlide = (currentSlide + 1) % (maxSlides + 1);
+    }
+  }, 4000);
+  
+  return () => {
+    clearInterval(interval);
+    window.removeEventListener('resize', checkMobile);
+  };
+});
 
 	function goToSlide(index: number) {
 		currentSlide = index;
@@ -70,7 +87,7 @@
 			</button>
 			
 			<div class="carousel-wrapper">
-				<div class="carousel-track" style="transform: translateX(-{currentSlide * 33.33}%)">
+                <div class="carousel-track" style="transform: translateX(-{currentSlide * (isMobile ? 100 : 33.33)}%)">
 					{#each castleImages as image, index}
 						<div class="carousel-slide">
 							<img 
@@ -389,20 +406,31 @@
 		overflow: hidden;
 	}
 
-	.carousel-track {
-		display: flex;
+	
 
-		height: 100%;
-		transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-
-	.carousel-slide {
+	/* .carousel-slide {
 
 		height: 100%;
 		position: relative;
 		flex-shrink: 0;
 		padding: 0 8px;
+	} */
+
+    .carousel-slide {
+    width: calc(100% / 3); /* Exactly 1/3 of the container width */
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+    padding: 0 8px;
+    box-sizing: border-box; /* Important: include padding in width calculation */
+}
+
+.carousel-track {
+		display: flex;
+		height: 100%;
+		transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 	}
+
 
 	.carousel-image {
 		width: 100%;
@@ -655,5 +683,14 @@
 			flex-direction: column;
 			align-items: center;
 		}
+
+         .carousel-slide {
+    width: calc(100%);
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
 	}
 </style>
