@@ -163,37 +163,33 @@
 
 			<div class="info-grid">
 				<div class="info-card">
+					<div class="info-icon">🕐</div>
+					<h3>Horaires</h3>
+					<div class="schedule-item">
+						<strong>Arrivée souhaitée:</strong>
+						<span>Vendredi 10 octobre aux alentours de 15h</span>
+					</div>
+					<div class="schedule-item">
+						<strong>Départ:</strong>
+						<span>Lundi 13 octobre aux alentours de 16h</span>
+					</div>
+					<div class="schedule-note">Pour ceux qui viennent le weekend: arrivée samedi matin idéalement avant 11h</div>
+				</div>
+
+                <div class="info-card">
 					<div class="info-icon">📍</div>
 					<h3>Lieu</h3>
 					<p>Château d'Argy</p>
-					<p>2 place du Château</p>
+					<p>9 Pl. de la Mairie</p>
 					<p>36500 Argy, France</p>
-					<a
+					<!-- <a
 						href="https://maps.google.com/maps?q=Château+d'Argy,+2+place+du+Château,+36500+Argy,+France"
 						target="_blank"
 						class="map-link"
 					>
 						Voir sur Google Maps →
-					</a>
-				</div>
-
-				<div class="info-card">
-					<div class="info-icon">🕐</div>
-					<h3>Horaires</h3>
-					<div class="schedule-item">
-						<strong>Arrivée:</strong>
-						<span>Vendredi 10 octobre à partir de 16h</span>
-					</div>
-					<div class="schedule-item">
-						<strong>Départ:</strong>
-						<span>Lundi 13 octobre avant 12h</span>
-					</div>
-					<div class="schedule-note">Pour ceux qui viennent le weekend: arrivée samedi matin</div>
-				</div>
-
-				<div class="info-card">
-					<div class="info-icon">🚗</div>
-					<h3>Accès</h3>
+					</a> -->
+                    <h3>Accès</h3>
 					<div class="access-item">
 						<strong>En voiture:</strong>
 						<span>2h30 depuis Paris, parking gratuit sur place</span>
@@ -208,7 +204,24 @@
 					</div>
 				</div>
 
-				<div class="info-card">
+				<!-- <div class="info-card">
+					<div class="info-icon">🚗</div>
+					<h3>Accès</h3>
+					<div class="access-item">
+						<strong>En voiture:</strong>
+						<span>2h30 depuis Paris, parking gratuit sur place</span>
+					</div>
+					<div class="access-item">
+						<strong>En train:</strong>
+						<span>Gare de Châteauroux (25 km) puis navette possible</span>
+					</div>
+					<div class="access-item">
+						<strong>Covoiturage:</strong>
+						<span>Organisation via le groupe WhatsApp</span>
+					</div>
+				</div> -->
+
+				<!-- <div class="info-card">
 					<div class="info-icon">🎒</div>
 					<h3>À prévoir</h3>
 					<ul class="bring-list">
@@ -219,12 +232,12 @@
 						<li>Carnet de notes personnel</li>
 						<li>Draps et serviettes (literie fournie)</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 
 			<div class="map-container">
 				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2715.8974931959!2d1.3252!3d46.9944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fa5c5e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2sChâteau+d&#39;Argy!5e0!3m2!1sfr!2sfr!4v1234567890"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.1682628475132!2d1.4334340763554498!3d46.938731971136384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fb7af163b9f29d%3A0x7176201e4dd1fcd!2sCh%C3%A2teau%20d&#39;Argy!5e0!3m2!1sfr!2sch!4v1756849617841!5m2!1sfr!2sch"
 					width="100%"
 					height="400"
 					style="border:0;"
