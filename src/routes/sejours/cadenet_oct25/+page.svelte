@@ -60,6 +60,12 @@
 <svelte:head>
 	<title>Échos des petits princes d'Alleret</title>
 	<meta name="description" content="Séjour du vendredi 10 au lundi 13 octobre 2025" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap"
+		rel="stylesheet"
+	/>
 </svelte:head>
 
 <div class="container">
@@ -544,8 +550,9 @@
 	.program-flow p,
 	.hero-subtitle,
 	.weekend-option {
-		font-family: 'Inter', sans-serif;
+		font-family: 'Source Serif Pro', 'Georgia', serif;
 		font-weight: 300;
+		letter-spacing: 0.3px;
 	}
 
 	.container {
@@ -583,10 +590,12 @@
 	}
 
 	.hero-content h1 {
-		font-family: 'Syne Mono', monospace;
+		font-family: 'Crimson Text', 'Times New Roman', serif;
 		font-size: clamp(2rem, 6vw, 3rem);
 		margin-bottom: 1rem;
 		color: var(--color-primary);
+		font-weight: 600;
+		letter-spacing: 0.5px;
 		text-shadow:
 			2px 2px 0 #ffffff,
 			-2px 2px 0 #ffffff,
@@ -611,7 +620,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
-		font-family: 'JetBrains Mono', monospace;
+		font-family: 'Source Serif Pro', 'Georgia', serif;
 		text-shadow:
 			2px 2px 0 #ffffff,
 			-2px 2px 0 #ffffff,
@@ -623,7 +632,7 @@
 	.weekend-option {
 		font-size: clamp(1.1rem, 2vw, 1.4rem);
 		font-style: italic;
-		font-family: 'JetBrains Mono', monospace;
+		font-family: 'Source Serif Pro', 'Georgia', serif;
 	}
 
 	/* Carousel Styles */
@@ -634,10 +643,12 @@
 	}
 
 	.gallery-header h3 {
-		font-family: 'Syne Mono', monospace;
+		font-family: 'Crimson Text', 'Times New Roman', serif;
 		font-size: clamp(1.5rem, 3vw, 2rem);
 		color: var(--color-primary);
 		margin: 0;
+		font-weight: 500;
+		letter-spacing: 0.3px;
 	}
 
 	.castle-gallery {
@@ -798,25 +809,30 @@
 	}
 
 	.section h2 {
-		font-family: 'Syne Mono', monospace;
+		font-family: 'Crimson Text', 'Times New Roman', serif;
 		font-size: clamp(2rem, 4vw, 2.5rem);
 		color: var(--color-primary);
 		margin-bottom: 2rem;
 		text-align: center;
+		font-weight: 600;
+		letter-spacing: 0.5px;
 	}
 
 	.section h3 {
-		font-family: 'Syne Mono', monospace;
+		font-family: 'Crimson Text', 'Times New Roman', serif;
 		font-size: clamp(1.2rem, 3vw, 1.5rem);
 		color: var(--color-secondary);
 		margin-bottom: 1rem;
+		font-weight: 500;
+		letter-spacing: 0.3px;
 	}
 
 	.section p {
 		font-size: clamp(1rem, 2vw, 1.125rem);
 		color: var(--color-primary);
-		line-height: 1.7;
+		line-height: 1.8;
 		margin-bottom: 1.5rem;
+		letter-spacing: 0.2px;
 	}
 
 	/* Program Section */
@@ -1098,7 +1114,8 @@
 		padding: 1rem 0 0;
 		border-top: 2px solid var(--color-accent);
 		margin-top: 1rem;
-		font-family: 'Inter', sans-serif;
+		font-family: 'Source Serif Pro', 'Georgia', serif;
+		letter-spacing: 0.2px;
 	}
 
 	.pricing-disclaimer p {
@@ -1122,7 +1139,9 @@
 		display: flex;
 		justify-content: center;
 		font-size: 1.5rem;
-		font-family: 'Inter', sans-serif;
+		font-family: 'Source Serif Pro', 'Georgia', serif;
+		font-weight: 500;
+		letter-spacing: 0.3px;
 	}
 
 	.contact-info {
@@ -1134,7 +1153,7 @@
 
 	.contact-btn {
 		display: inline-block;
-		font-family: 'Syne Mono', monospace;
+		font-family: 'Source Serif Pro', 'Georgia', serif;
 		font-size: 1.1rem;
 		color: var(--color-primary);
 		background: var(--color-accent);
@@ -1142,7 +1161,8 @@
 		text-decoration: none;
 		border-radius: 4px;
 		transition: all 0.3s ease;
-		font-weight: bold;
+		font-weight: 600;
+		letter-spacing: 0.3px;
 	}
 
 	.contact-btn:hover {
