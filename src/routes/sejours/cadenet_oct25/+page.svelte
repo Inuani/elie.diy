@@ -423,7 +423,7 @@
 						</div>
 						<div class="price-total">
 							<span>Total</span>
-							<span>~{180 + Number(selectedRoomPrice3Nights)}€</span>
+							<span>{205 + Number(selectedRoomPrice3Nights)}€</span>
 						</div>
 					</div>
 				</div>
@@ -497,11 +497,11 @@
 						</div>
 						<div class="price-item donation">
 							<span>Donation en conscience pour l'organisation et le service (suggestion)</span>
-							<span>50€</span>
+							<span>80€</span>
 						</div>
 						<div class="price-total">
 							<span>Total</span>
-							<span>~{120 + Number(selectedRoomPriceWeekend)}€</span>
+							<span>{150 + Number(selectedRoomPriceWeekend)}€</span>
 						</div>
 					</div>
 				</div>
