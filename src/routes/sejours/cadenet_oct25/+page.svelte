@@ -77,8 +77,8 @@
 				la vibration du coeur aussi....
 			</h1>
 			<p class="hero-subtitle">
-				Une rencontre amicale "en écho" au séjours d'Alleret du mercredi 22 au dimanche 26 octobre
-				2025
+				Comme un écho aux séjours du Château d’Alleret, retrouvons-nous à la Fontaine de l’Aube pour
+				partager la joie d'être ensemble du jeudi 23 au dimanche 26 octobre 2025
 			</p>
 			<div class="hero-dates">
 				<span class="weekend-option">(Possibilité d'arriver le jour qui vous convient)</span>
@@ -151,17 +151,23 @@
 
 			<div class="meditation-highlight">
 				<h3>
-					Je vous propose comme base pour cette rencontre deux méditations/jour (au minimum) 🧘🏼‍♀️🪷🧘‍♂️
+					La conscience en éveil, l'intelligence collective, le corps en mouvement, la voix, la
+					méditation feront le terreau de ce moment auxquels pourront s’ajouter vos élans de
+					contribution. 🧘🏼‍♀️🪷🧘‍♂️
 				</h3>
 			</div>
 			<div class="program-flow">
 				<p>
-					Avec cette base, cette rencontre pourra se tisser organiquement selon vos inspirations et
-					vos élans ...
+					Plus précisément nous pourrons retrouver : Pour les adultes La méditation avec Elie La
+					joie en mouvement avec Stéphane L’échange ouvert et en conscience avec Sergio La voix du
+					coeur avec Lydwine Les cercles de paroles Pour les familles Le dessin collectif : imaginer
+					les racines de chaque élément avec Lydwine La danse libre avec Caroline 🎨 Activités
+					créatives/artistique • 💃 Mouvements & Corps • 🗣️ Partages & Cercles • 🌿 Connexion nature
+					...
 				</p>
 				<p>
-					🎨 Activités créatives/artistique • 💃 Mouvements & Corps • 🗣️ Partages & Cercles • 🌿
-					Connexion nature ...
+					Avec cette base, cette rencontre pourra se tisser organiquement selon vos inspirations et
+					vos élans ...
 				</p>
 				<p>
 					Que vous ayez des élans co-création ou pas vous êtes chaleureusement invité pour cette
@@ -181,18 +187,24 @@
 					<div class="info-icon">🕐</div>
 					<h3>Horaires</h3>
 					<div class="schedule-item">
-						<strong>Arrivée souhaitée:</strong>
-						<span>Mercredi 10 octobre aux alentours de 17h</span>
+						<strong>Début de la rencontre:</strong>
+
+						<span>jeudi 23 octobre 2025 à 19h</span>
+						<span
+							>Possibilité d’arriver la veille le mercredi 22 à partir de 17h pour profiter de la
+							journée libre du jeudi</span
+						>
+						<div class="schedule-note">
+							Pour ceux qui arrive le jeudi: arrivée avant 18h idéalement
+						</div>
+						<div class="schedule-note">
+							Pour ceux qui viennent le weekend: arrivée vendredi soir idéalement
+						</div>
 					</div>
+
 					<div class="schedule-item">
 						<strong>Départ:</strong>
 						<span>Dimanche 26 octobre à 16h au plus tard</span>
-					</div>
-					<div class="schedule-note">
-						Pour ceux qui arrive le jeudi: arrivée avant 18h idéalement
-					</div>
-					<div class="schedule-note">
-						Pour ceux qui viennent le weekend: arrivée vendredi soir idéalement
 					</div>
 				</div>
 
@@ -241,18 +253,33 @@
 					</div>
 				</div> -->
 
-				<!-- <div class="info-card">
-					<div class="info-icon">🎒</div>
-					<h3>À prévoir</h3>
-					<ul class="bring-list">
+				<div class="info-card">
+					<div class="info-icon">ℹ️</div>
+					<h3>Infos supplémentaires</h3>
+					<div class="access-item">
+						<strong>Repas:</strong>
+						<span>
+							Les repas végétariens orchestrés par Caroline Cornelia sont prévus du jeudi soir au
+							dimanche midi (Auto gestion pour le mercredi soir, jeudi matin et midi)
+						</span>
+					</div>
+					<div class="access-item">
+						<strong>Enfants - ados:</strong>
+						<span>
+							L’espace d’accueil étant réduit, la présence des enfants sera limitée à un enfant par
+							adulte.
+						</span>
+					</div>
+
+					<!-- <ul class="bring-list">
 						<li>Coussin ou zafu de méditation (quelques-uns disponibles sur place)</li>
 						<li>Tapis de yoga pour les pratiques corporelles</li>
 						<li>Vêtements confortables</li>
 						<li>Chaussures pour marche en nature</li>
 						<li>Carnet de notes personnel</li>
 						<li>Draps et serviettes (literie fournie)</li>
-					</ul>
-				</div> -->
+					</ul> -->
+				</div>
 			</div>
 
 			<div class="map-container">
@@ -279,7 +306,7 @@
 
 			<div class="pricing-cards">
 				<div class="pricing-card">
-					<h3>Séjour complet (à partir de mercredi - 4 nuits)</h3>
+					<h3>Séjour à partir de mercredi (4 nuits)</h3>
 					<div class="price-breakdown">
 						<div class="price-item">
 							<span>Location salles de la fontaine de l'Aube (10€/jour)</span>
@@ -357,7 +384,7 @@
 				</div>
 
 				<div class="pricing-card">
-					<h3>Séjour 3 nuits</h3>
+					<h3>Séjour à partir de jeudi (3 nuits)</h3>
 					<div class="price-breakdown">
 						<div class="price-item">
 							<span>Location salles de la fontaine de l'Aube (10€/jour)</span>
@@ -581,9 +608,8 @@
 		right: 0;
 		bottom: 0;
 		background:
-			linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.6)),
-			url('/argy/me_gibli_backgrd_right.png');
-		background-position: 75% center;
+			linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 1)), url('/equipe_lpp.png');
+		background-position: 55% center;
 		background-size: cover;
 		background-repeat: no-repeat;
 		z-index: -2;
